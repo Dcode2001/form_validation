@@ -172,11 +172,11 @@ class _form_validationState extends State<form_validation> {
                   width: 300,
                   child: ElevatedButton(
                       onPressed: () {
-                        String name = tname.text;
-                        String email = temail.text;
-                        String contact = tcontact.text;
-                        String password = tpassword.text;
-                        String conpass = tconpassword.text;
+                        String name = tname.text.trim();   // trim no use vadharani space kadhva mate thay che.....
+                        String email = temail.text.trim();
+                        String contact = tcontact.text.trim();
+                        String password = tpassword.text.trim();
+                        String conpass = tconpassword.text.trim();
 
                         bool emailValid = RegExp(
                                 r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
